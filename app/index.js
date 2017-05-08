@@ -3,6 +3,6 @@
  */
 import React from 'react';
 import  {render} from 'react-dom';
-import {StateDemo} from './components'
+import {StateDemo,backboneDemo} from './components'
 
-render(<StateDemo />, document.getElementById('application'));
+render(<backboneDemo />, document.getElementById('application'));

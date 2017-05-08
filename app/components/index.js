@@ -3,8 +3,10 @@
  */
 import element from './index/index'
 import StateDemo from './test'
+import backboneDemo from './backbone'
 
 export {
     element,
-    StateDemo
+    StateDemo,
+    backboneDemo
 }
