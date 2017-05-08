@@ -1,6 +1,3 @@
-/**
- * Created by Yuan on 2017/5/7.
- */
 module.exports = function () {
     var box = {
         'name':'Z.L',
@@ -8,7 +5,7 @@ module.exports = function () {
     }
 
     let saySomeThing = (words) =>{
-       console.log(words)
+        console.log(words)
     }
 
     saySomeThing('yahahah')

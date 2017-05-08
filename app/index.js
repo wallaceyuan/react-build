@@ -1,6 +1,8 @@
 /**
  * Created by Yuan on 2017/5/7.
  */
-var component = require('./component');
+import React from 'react';
+import  {render} from 'react-dom';
+import {StateDemo} from './components'
 
-document.body.appendChild(component());
+render(<StateDemo />, document.getElementById('application'));
