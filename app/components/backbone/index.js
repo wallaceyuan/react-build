@@ -22,7 +22,7 @@ console.log(
     "picture : " + profile.get("picture")
 );
 
-export default class StateDemo extends Component {
+class StateDemo extends Component {
 
     constructor(props) {
         super(props);
@@ -50,8 +50,27 @@ export default class StateDemo extends Component {
                 <div className="picture">
                     <img src={this.props.profile.get("picture")} alt=""/>
                 </div>
+                <div className="name">
+                    {this.props.profile.get("name")}
+                    <small>
+                        ({this.props.profile.get('gender')})
+                    </small>
+                </div>
+
                 <div>目前已经计时：{this.state.secondsElapsed}秒</div>
             </div>
+        )
+    }
+}
+
+export default class CardComponent extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    render() {
+        return(
+            <StateDemo profile={profile} />
         )
     }
 }

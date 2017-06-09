@@ -3,10 +3,12 @@
  */
 import element from './index/index'
 import StateDemo from './test'
-import backboneDemo from './backbone'
+import CardComponent from './backbone'
+import CardComponentTwo from './backbone/two'
 
 export {
     element,
     StateDemo,
-    backboneDemo
+    CardComponent,
+    CardComponentTwo
 }
